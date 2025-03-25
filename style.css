@@ -1,0 +1,680 @@
+* {
+    font-family: 'Chewy', cursive;
+    letter-spacing: 1px; 
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+}      
+
+
+
+
+nav {
+    width: 100%; 
+    height: 10%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px rgba(109, 109, 109, 0.2);
+
+}
+.toggle-icon {
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: color 0.3s ease;
+}
+
+#mode-icon {
+    width: 30px;
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between; 
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    margin: 0;
+    align-items: center;
+    line-height: 1.8;
+    gap:10px;
+}
+
+
+nav ul li {
+    position: relative;
+    margin-right: 10px;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(170, 22, 187);
+    font-weight: 400;
+    font-size: 17px;
+    padding: 8px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+    background-color:none;
+    
+    
+}
+
+nav ul li a:hover {
+    color:  #89CFF0;
+    background-color: #760d88;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0px;
+    width: 150px;
+    background-color: #fdfdfd;
+    box-shadow: 0px 2px 20px rgba(109, 109, 109, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+    list-style-type: none;
+    
+    
+}
+
+nav ul li ul li {
+    padding: 10px;
+
+}
+
+nav ul li ul li a {
+    font-size: 15px;
+    color: rgb(183, 35, 202);
+
+}
+
+nav ul li ul li a:hover {
+    color:  #89CFF0;
+    background-color: #760d88;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+
+#hero {
+    background-image: url('https://assets.papegames.com/nikkiweb/papegame/deepspaceen/material/20250110/255dde68d193f4e32e15e4fc4703b3b0.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(237, 237, 237, 0.694); 
+    z-index: 1;
+}
+
+#hero .col {
+    position: relative;
+    z-index: 2; 
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 45%; 
+}
+
+#col-hero2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle-image {
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#col-hero2 img {
+    display: block;
+    margin: auto;
+    animation: floating 4s ease-in-out infinite;
+}
+
+.row-1 {
+    color: rgb(131, 64, 143);
+    font-size: 30px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typing-effect {
+    font-size: 30px;
+    font-family: monospace; 
+    white-space: nowrap; 
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 0; 
+    animation:
+        typing 5s steps(40, end) infinite, 
+        blink 0.75s step-end infinite; 
+}
+
+.row-1 #textjalan {
+    color:  #0fa8f5;
+    font-size: 42px;
+    margin-top: -40px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    display: inline-block;
+    animation: typing 3s steps(20, end) forwards, blink 1s infinite;
+}
+
+.row-2 {
+    width: 80%;
+    margin-top: -50px;
+    margin-bottom: 35px;
+    color: rgb(72, 72, 72); 
+}
+
+.row-3 {
+    gap: 15px;
+    align-items: center;
+}
+
+.row-3 button {
+    background-color: rgb(131, 64, 143);
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.row-3 button:hover {
+    background-color: #45a049;
+}
+
+table{
+    width: 100%;
+    border: none;
+    margin-top: 2rem;
+    overflow: hidden;
+    border-spacing: 20px;
+
+}
+
+td[colspan="2"]{
+    width: 50%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+table h2, table h1{
+    color: #83408f;
+}
+
+table h2 {
+    font-size: 1.5em;
+    margin: 0; 
+  }
+
+table p{
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+@keyframes floatImage{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-50px);}
+    100% {transform: translateY(0);}
+}
+
+nav td img{
+    display: block;
+    margin: auto;
+    animation: floatImage 3s ease-in-out infinite;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    align-items:center ;
+}
+
+
+div.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.contact h1 {
+    font-size: 28px;
+    color: #bd0000 rgb(159, 23, 23);
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 15px;
+}
+
+.contact label {
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+    width: 100%;
+    max-width: 100rem; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 auto; 
+}
+
+
+.contact textarea {
+    resize: none;
+}
+
+.contact button {
+    background-color: #83408f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background-color: #760d88;
+}
+
+footer {
+    color: #83408f;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.experience-section {
+    max-width: 1000px; 
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    display: center;
+
+}
+
+.experience-section td img{
+    display: block;
+    margin: auto;
+    animation: floatImage 3s ease-in-out infinite;
+}
+
+.experience-section h1 {
+    font-size: 40px;
+    display: center;
+    
+}
+
+.experience-section tr td h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+
+
+.card-wrapper {
+    padding: 20px;
+    background-color: #f0f0f0; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar responsif dan menyesuaikan layar */
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 23%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%; 
+    border-radius: 8px; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card h2 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555; 
+}
+
+
+  
+.mega-experience {
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container h1 {
+   text-align: center;
+   justify-content: center;
+   color: #760d88;
+   margin-top: 100px;
+   margin-bottom: 10px;
+}
+
+.snapshot-text {
+    margin-top: -150px; /* Kurangi jarak atas */
+    text-align: center; /* Memastikan teks tetap di tengah */
+    font-style: italic; /* Jika ingin mempertahankan gaya miring */
+    color:  #5e3a8e;
+    
+  }
+  
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-bottom: 0px;
+}
+
+.carousel-item {
+    min-width: 100%;
+    
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.modal {
+    position: fixed; /* Agar modal tetap berada di tengah layar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparansi latar belakang */
+    display: none; /* Modal hanya muncul ketika diaktifkan */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Prioritas tinggi untuk muncul di depan elemen lain */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    z-index: 10000; /* Pastikan isi modal tetap di atas layer transparansi */
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10001; /* Tombol close tetap terlihat */
+  }
+  
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form {
+    background-color: #f9f0ff;
+    background-size: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form h2 {
+    text-align: center;
+    color: #5e3a8e ;
+    font-size: large;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #5e3a8e;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #d8bfff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: #5e3a8e;
+    background-color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #b593ff;
+    box-shadow: 0 0 10px rgba(174, 123, 237, 0.3);
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: #6b559b;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: #9972e6;
+}
+
+:root {
+    --nav-ul-background: rgb(255, 255, 255); 
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    --nav-ul-background: rgb(0, 0, 0); 
+    --nav-ul-text-color: rgb(255, 255, 255); 
+    background:  rgb(0, 0, 0); 
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: var(--nav-ul-background); 
+    color: var(--nav-ul-text-color); 
+    padding: 10px 50px;
+    margin: 0;
+    align-items: center;
+    line-height: 1.8;
+    gap: 10px;
+}

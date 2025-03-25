@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega's Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <!-- INI NAVBAR -->
+      <nav>
+        <ul>
+          <li><img src="https://img1.picmix.com/output/stamp/normal/6/6/9/7/2657966_f191e.png" alt="icon header" width="50" /></li>
+          <li><a id="homeLink" href="#hero">Home</a></li>
+          <li><a id="aboutMeLink" href="#aboutMeSection">About Me</a></li>
+          <li>
+            <a >Skills</a>
+            <ul>
+              <li><a id="hard" class="trigger-modal" href="#skillsModal">Hardskill</a></li>
+              <li><a id="soft" class="trigger-modal" href="#skillsModal">Softskill</a></li>
+            </ul>
+          </li>
+          <li><a id="port"class="trigger-modal" href="#skillsModal">Portfolio</a></li>
+          <li><a href="https://wa.me/6281615155476">Contact</a></li>
+          <br>
+          <button id="mode-toggle" class="toggle-icon">
+            <img id="mode-icon" src="https://static.thenounproject.com/png/4808961-200.png" alt="Mode Icon">
+        </button>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Modal untuk Skills -->
+    <div id="skillsModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Note!</h2>
+        <p>Maaf, halaman ini masih dalam pengembangan!</p>
+      </div>
+    </div>
+
+    <main>
+      <!-- SECTION HERO / HOME -->
+      <section id="hero">
+        <!-- KOLOM PERTAMA -->
+        <div class="col" id="col-hero1">
+          <div class="row-1 typing-effect">
+            <h1>Hi! I'm </h1>
+            <h1 id="textjalan">Mega Yassinta Aulia</h1>
+          </div>
+          <div class="row-2">
+            <p>I'm a Information System Student at Faculty of Computer Science, Jember University</p>
+          </div>
+          <div class="row-3">
+            <button>
+              <a href="https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ?si=IKDe5civTkSR2Gx2LyRORw">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/800px-Spotify_logo_with_text.svg.png" alt="Spotify Logo" style="width: 100px; height: auto;">
+            </a>          </button>
+            <br/>
+            <button>
+              <a href="https://www.instagram.com/megayassinta_/" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                <img src="https://www.logo.wine/a/logo/Instagram/Instagram-Wordmark-Black-Logo.wine.svg" alt="Instagram Logo" style="width: 100px; height: 40px;">
+            </a>
+            </button>
+            <button>
+            <a href="https://github.com/Megayass12" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+              <img src="https://www.pngplay.com/wp-content/uploads/12/GitHub-PNG-HD-Photos.png" alt="Github Logo" style="width: 100px; height: 40px;">
+          </a>
+        </button>
+
+            <button><a href="https://id.linkedin.com/" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LinkedIn_logo.svg" alt="Linkedin Logo" style="width: 100px; height: 40px;">
+          </a></button>
+          </div>
+        </div>
+        <!-- KOLOM KEDUA -->
+        <div class="col" id="col-hero2">
+          <img src="https://i.pinimg.com/736x/ca/9f/7b/ca9f7bb38f87ab53a458ba5dddc68aa6.jpg" alt="foto" class="circle-image" />
+          <img src="https://i.pinimg.com/736x/86/8f/47/868f479775e09332ec017dcae455a759.jpg" alt="foto" class="circle-image" />
+          <img src="https://i.pinimg.com/736x/4f/fd/a1/4ffda19a1fcc965d60a400839daea083.jpg" alt="foto" class="circle-image" />
+        </div>
+      </section>
+
+      <!-- SECTION MY EXPERIENCE -->
+      <section class="md-mt-xl experience-section">
+        <table>
+          <!-- BARIS 1 -->
+          <tr>
+            <!-- KOLOM 1 -->
+            <td rowspan="4" width="50%">
+              <img src="https://i.pinimg.com/736x/04/41/8d/04418dfcac23ba83f3af67309f33162e.jpg" alt="foto" class="mega-experience" />
+            </td>
+            <!-- KOLOM 2 -->
+            <td colspan="5">
+              <h1>My Experience</h1>
+            </td>
+          </tr>
+          <!-- BARIS 2 -->
+          <tr>
+            <!-- KOLOM 1 -->
+            <td>
+              <h2>OSIS SMAN UMBULSARI</h2>
+              <p>
+                General Secretary 2020/2021
+              </p>
+              <p>
+                General Secretary 2021/2022
+              </p>
+            </td>
+            <!-- KOLOM 2 -->
+            <td>
+              <h2>Physics Carnival UNEJ 2020</h2>
+              <p>
+                Best Poster for KTI with title "BUDIDAYA BLACK SOLDIER FLY (MAGGOT) SEBAGAI SOLUSI PEMANFAATAN SAMPAH ORGANIK"
+              </p>
+            </td>
+          </tr>
+          <!-- BARIS 3 -->
+          <tr>
+            <!-- KOLOM 1 -->
+            <td>
+              <h2>Search For Seameo Young Scientist (SSYS) 2022</h2>
+              <p>
+                Out Standing Award for Presentation of Project Exhibit
+              </p>
+            </td>
+            <!-- KOLOM 2 -->
+            <td>
+              <h2>Technology Information Competition 6.0</h2>
+              <p>
+                Second Winner for KTI with title "Green Air Initiative:Donasi Kecil Menuju Udara Bersih di Kota-Kota Indonesia"
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <!-- KOLOM 1 -->
+            <td>
+              <h2>Astanawidya</h2>
+              <p>
+               Staff Research and Development (2023/2024)
+              </p>
+              <p>
+                Co Research and Development (2024/2025)
+               </p>
+            </td>
+            <!-- KOLOM 2 -->
+            <td>
+              <h2> Paguyuban Mahasiswa Bidikmisi 2023/2024</h2>
+              <p>
+                Coordinator Faculty of Computer Science
+              </p>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="aboutMeSection">
+        <div class="carousel-container">
+          <h1 position="center">About Me</h1> 
+          <div class="carousel">
+              <div class="carousel-item active">
+                  <img src="https://i.pinimg.com/736x/e7/06/f6/e706f65fc2660586ebb5b252d280bf87.jpg" alt="Image 1">
+              </div>
+              <div class="carousel-item">
+                  <img src="https://i.pinimg.com/736x/42/75/47/427547ebcf0aa3eef6c5ba9b4d8a4008.jpg" alt="Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/62/ab/c8/62abc8fc9184797c0faa7fee75c1cc6a.jpg" alt="Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/9f/43/02/9f4302ca5807e09743f1b4b23cd8c7a4.jpg" alt="Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/e7/e6/c9/e7e6c9eec41b3ebfc8a2d86b08c1b863.jpg" alt="Image 2">
+              </div>
+          </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+          <p class="snapshot-text">"Some Snapshot About Me"</p>
+        </div>
+      
+      <script src="script.js"></script>
+      
+    </section>
+
+    <section class="card-wrapper">
+        <div class="card-container">
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/65/e0/44/65e044ac08ff2f5839f921645f8e58fc.jpg" alt="Astana">
+            <h2>RAT Astanawidya 2023/2024</h2>
+            <p> It was an honor to be the 2nd presidium at the year-end meeting this time. Thank you to Astanawidya 23/24.</p>
+          </div>
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/0f/f0/27/0ff027be962bf7c7a45e93e080ddb041.jpg" alt="Chicken">
+            <h2>MTQMN Universitas Jember 2023</h2>
+            <p>Participated in the selection of Musabaqah Tilawatil Quran Mahasiswa Nasional (MTQMN) at the Faculty of Teacher Training and Education, University of Jember.</p>
+          </div>
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/e3/ee/3a/e3ee3ad00eecde319abdc4458fe83c24.jpg" alt="Chicken">
+            <h2>Special Moment 2022</h2>
+            <p>Special moment on education day gets appreciation from East Java Governor</p>
+          </div>
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/6c/07/1c/6c071c5835e7dd46bc2b6461d08cca2c.jpg" alt="Chicken">
+            <h2>12th Regional Congress Search for SEAMEO Young Scientists (SSYS) 2022 </h2>
+            <p>It was an honor to be a part of 12th Regional Congress Search for SEAMEO Young Scientists (SSYS) 2022 </p>
+          </div>
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/eb/c8/c2/ebc8c266afb2729772a94260b0da78fc.jpg" alt="Chicken">
+            <h2>Hari Pendidikan Nasional 2022</h2>
+            <p>This is me with the grass</p>
+          </div>
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/0e/e0/23/0ee0231ebdd6d56f9b668505db1fda18.jpg" alt="Chicken">
+            <h2>Relax Team of Collaboration Team for SSYS 2022</h2>
+            <p>These are the people behind the relax team, hard work and fun are a great combination.</p>
+          </div>
+          
+        </div>
+    </section>
+
+      <!-- SECTION FORM -->
+      <section class="form">
+        <!-- Form -->
+        <h2>Feel free to fill out the form below if you have anything to tell me </h2>
+        <form id="contactForm">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required />
+            
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required />
+            
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" rows="6" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    
+        <div id="response"></div> 
+    
+        <div id="popup" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closePopup">&times;</span>
+                <p>Form berhasil dikirim!</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    
+    const formData = new FormData(this);
+    
+    fetch('', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        // Menampilkan response ke elemen HTML
+        document.getElementById('response').innerHTML = data;
+
+        // Menampilkan modal
+        var modal = document.getElementById('popup');
+        modal.style.display = "block";
+
+        // Mereset form
+        this.reset(); 
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Gagal mengirim form. Coba lagi yaaa!');
+    });
+});
+
+document.getElementById('closePopup').addEventListener('click', function() {
+    var modal = document.getElementById('popup');
+    modal.style.display = "none";
+});
+
+window.onclick = function(event) {
+    var modal = document.getElementById('popup');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+
+      </script>
+          
+        
+    </main>
+
+    <footer>
+      <h6>Created by Mega Yassinta Aulia</h6>
+    </footer>
+  </body>
+      <script src="script.js"></script>
+
+</html>
+
