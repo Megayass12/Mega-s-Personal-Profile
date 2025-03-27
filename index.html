@@ -20,8 +20,8 @@
           <li>
             <a >Skills</a>
             <ul>
-              <li><a id="hard" class="trigger-modal" href="#skillsModal">Hardskill</a></li>
-              <li><a id="soft" class="trigger-modal" href="#skillsModal">Softskill</a></li>
+              <li><a id="hard" href="#card-wrapp">Hardskill</a></li>
+              <li><a id="soft" href="#card-wrapps">Softskill</a></li>
             </ul>
           </li>
           <li><a id="port"class="trigger-modal" href="#skillsModal">Portfolio</a></li>
@@ -34,7 +34,7 @@
       </nav>
     </header>
 
-    <!-- Modal untuk Skills -->
+    <!-- Modal Skills -->
     <div id="skillsModal" class="modal" style="display: none;">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -222,9 +222,49 @@
           
         </div>
     </section>
+   
+
+    <section id="hard-skill" class="card-wrapp">
+      <h1>Hard Skill</h1>
+      <div class="card-skill">
+        <div class="cards">
+          <img src="https://i.pinimg.com/736x/83/fe/22/83fe2289e31398d96e8e6ed9d603c72f.jpg" alt="msword">
+          <h2>Microsoft Office</h2>
+        </div>
+        <div class="cards">
+          <img src="https://i.pinimg.com/736x/56/67/67/56676773cb4f0c00d7d47c6a84b9407c.jpg" alt="figma">
+          <h2>Figma</h2>
+        </div>
+        <div class="cards">
+          <img src="https://i.pinimg.com/736x/c4/10/c7/c410c7c8c7bb31013500d214a7da8a8b.jpg" alt="Capcut">
+          <h2>Capcut</h2>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    <br>
+    </section>
+
+    <section id="soft-skill" class="card-wrapps">
+      <h1>Soft Skill</h1>
+      <div class="card-skill">
+        <div class="cards">
+          <img src="https://i.pinimg.com/736x/ae/5b/64/ae5b64757a4229601c7bc6d5787212a5.jpg" alt="msword">
+          <h2>Leadership</h2>
+        </div>
+        <div class="cards">
+          <img src="https://i.pinimg.com/736x/76/44/f0/7644f0a0a84cabcbb7c8ee6608fc4559.jpg" alt="figma">
+          <h2>Critical Thinking</h2>
+        </div>
+        <div class="cards">
+          <img src="https://i.pinimg.com/736x/41/cd/f1/41cdf150284f7e215e2f8882837ac3ba.jpg" alt="Capcut">
+          <h2>Public Speaking</h2>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    <br>
 
       <!-- SECTION FORM -->
-      <section class="form">
+    <section class="form">
         <!-- Form -->
         <h2>Feel free to fill out the form below if you have anything to tell me </h2>
         <form id="contactForm">
@@ -263,14 +303,14 @@
     })
     .then(response => response.text())
     .then(data => {
-        
+        // Menampilkan response ke elemen HTML
         document.getElementById('response').innerHTML = data;
 
-        
+        // Menampilkan modal
         var modal = document.getElementById('popup');
         modal.style.display = "block";
 
-        
+        // Mereset form
         this.reset(); 
     })
     .catch(error => {
@@ -303,4 +343,3 @@ window.onclick = function(event) {
       <script src="script.js"></script>
 
 </html>
-
