@@ -27,11 +27,7 @@ function prevSlide() {
 
 document.getElementById("aboutMeLink").addEventListener("click", function (event) {
     event.preventDefault(); 
-    
-    
     const targetSection = document.getElementById("aboutMeSection");
-  
-   
     targetSection.scrollIntoView({
       behavior: "smooth", 
       block: "start", 
@@ -39,23 +35,31 @@ document.getElementById("aboutMeLink").addEventListener("click", function (event
   });
 
   document.getElementById("homeLink").addEventListener("click", function (event) {
-    event.preventDefault(); 
-    
+    event.preventDefault();
 
     const targetSection = document.getElementById("hero");
-  
-  
     targetSection.scrollIntoView({
       behavior: "smooth", 
       block: "start", 
     });
   });
 
+  
+  const button = document.getElementById('hard'); 
+
+  button.addEventListener('click', function () {
+      const target = document.querySelector('.card-wrapp'); 
+      const offset = -100; 
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset + offset;
+
+      window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+      });
+  });
 
 const modal = document.getElementById("skillsModal");
 const closeModal = document.querySelector(".close");
-
-
 const triggers = document.querySelectorAll(".trigger-modal");
 
 triggers.forEach((trigger) => {
@@ -65,11 +69,9 @@ triggers.forEach((trigger) => {
   });
 });
 
-
 closeModal.addEventListener("click", () => {
   modal.style.display = "none";
 });
-
 
 window.addEventListener("click", (e) => {
   if (e.target === modal) {
@@ -80,8 +82,6 @@ window.addEventListener("click", (e) => {
 document.addEventListener("DOMContentLoaded", () => {
   const modeToggle = document.getElementById("mode-toggle");
   const modeIcon = document.getElementById("mode-icon");
-
-
 
   const savedMode = localStorage.getItem("theme");
   if (savedMode === "dark") {
@@ -101,7 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 
-
   function applyDarkMode() {
       document.documentElement.style.setProperty("--background-color", "black");
       document.documentElement.style.setProperty("--text-color", "white");
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.documentElement.style.setProperty("--text-color", "black");
       document.documentElement.style.setProperty("--nav-background", "#f8f9fa");
       document.documentElement.style.setProperty("--nav-text-color", "black");
-      modeIcon.src = "https://static.thenounproject.com/png/4808961-200.png";;
+      modeIcon.src = "https://static.thenounproject.com/png/4808961-200.png";
   }
 });
 
@@ -128,6 +127,15 @@ modeToggle.addEventListener('click', function() {
     body.classList.toggle('dark-mode'); 
 });
 
+const buttons = document.getElementById('soft'); 
 
+buttons.addEventListener('click', function () {
+    const target = document.querySelector('.card-wrapps'); 
+    const offset = -100; 
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset + offset;
 
-  
+    window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+    });
+});
