@@ -35,6 +35,7 @@ If you have any questions, suggestions, or collaboration ideas, feel free to rea
 
 - Email: megayass12@gmail.com
 - GitHub: https://github.com/Megayass12
+- Vercel: https://mega-s-personal-profile.vercel.app/ 
 
 ---
 
